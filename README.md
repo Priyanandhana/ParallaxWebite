@@ -1,2 +1,2 @@
-# ParallaxWebite
+# ParallaxWebsite
 Using HTML, CSS
