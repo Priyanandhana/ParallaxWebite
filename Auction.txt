@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auction - Vintage Cars</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Garamond', serif;
+  }
+  .header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .auction-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+
+  .car-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .bid-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .bid-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .bid-button {
+    padding: 8px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .bid-button:hover {
+    background-color: #333;
+  }
+
+  .current-bid {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .timer {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .winner-message {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .car-name {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .car-description {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  <h1>Auction - Vintage Cars</h1>
+  <a href="para.html" style="color: #fff; text-decoration: none;">Back to Main Page</a>
+</div>
+
+<!-- Auction for '68 Camaro -->
+<div class="auction-container" id="car1">
+  <div class="car-name">'68 Camaro</div>
+  <div class="car-description">This iconic Chevrolet Camaro from 1968 is known for its powerful performance and sleek design. It's a true classic car enthusiast's dream.</div>
+  <img src="background2.jpg" alt="Car Image" class="car-image">
+  <div class="current-bid">Current Highest Bid: ₹35,00,000</div>
+  <form class="bid-form" id="bidForm1">
+    <label for="bidAmount1">Person 1 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount1" min="3500001">
+    <label for="bidAmount2">Person 2 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount2" min="3500001">
+    <button type="submit" class="bid-button">Place Bid</button>
+  </form>
+  <div class="timer" id="timer1">Timer: 30 seconds remaining</div>
+  <div class="winner-message" id="winnerMessage1"></div>
+</div>
+
+<!-- Auction for 'Mustang 1966' -->
+<div class="auction-container" id="car2">
+  <div class="car-name">Mustang 1966</div>
+  <div class="car-description">The Ford Mustang from 1966 is an American muscle car legend. With its iconic design and powerful engine, it's a symbol of automotive excellence.</div>
+  <img src="background3.jpg" alt="Car Image" class="car-image">
+  <div class="current-bid">Current Highest Bid: ₹40,00,000</div>
+  <form class="bid-form" id="bidForm2">
+    <label for="bidAmount3">Person 1 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount3" min="4000001">
+    <label for="bidAmount4">Person 2 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount4" min="4000001">
+    <button type="submit" class="bid-button">Place Bid</button>
+  </form>
+  <div class="timer" id="timer2">Timer: 30 seconds remaining</div>
+  <div class="winner-message" id="winnerMessage2"></div>
+</div>
+
+<!-- Auction for 'Porsche 911 Carrera' -->
+<div class="auction-container" id="car3">
+  <div class="car-name">Porsche 911 Carrera</div>
+  <div class="car-description">The Porsche 911 Carrera is a legendary sports car that has been captivating enthusiasts for decades. With its timeless design and exhilarating performance, it's a true automotive icon.</div>
+  <img src="background4.jpg" alt="Car Image" class="car-image">
+  <div class="current-bid">Current Highest Bid: ₹60,00,000</div>
+  <form class="bid-form" id="bidForm3">
+    <label for="bidAmount5">Person 1 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount5" min="6000001">
+    <label for="bidAmount6">Person 2 Bid:</label>
+    <input type="number" class="bid-input" placeholder="Enter bid amount" id="bidAmount6" min="6000001">
+    <button type="submit" class="bid-button">Place Bid</button>
+  </form>
+  <div class="timer" id="timer3">Timer: 30 seconds remaining</div>
+  <div class="winner-message" id="winnerMessage3"></div>
+</div>
+
+<script>
+  // Function to start the bid timer
+  function startBidTimer(timerElement, auctionContainer, winnerMessageElement) {
+    let timeLeft = 30;
+    const countdown = setInterval(() => {
+      timeLeft--;
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        timerElement.style.display = 'none';
+        const currentBid = parseInt(auctionContainer.querySelector('.current-bid').innerText.replace('Current Highest Bid: ₹', '').replace(/,/g, ''));
+        const bidAmount1 = parseInt(auctionContainer.querySelector('.bid-input:nth-of-type(1)').value);
+        const bidAmount2 = parseInt(auctionContainer.querySelector('.bid-input:nth-of-type(2)').value);
+        const highestBid = Math.max(currentBid, bidAmount1, bidAmount2);
+        const highestBidder = highestBid === bidAmount1 ? 'Person 1' : highestBid === bidAmount2 ? 'Person 2' : 'No one';
+        auctionContainer.querySelector('.current-bid').innerText = 'Current Highest Bid: ₹' + highestBid.toLocaleString();
+        winnerMessageElement.style.display = 'block';
+        winnerMessageElement.innerText = 'Car Sold! Congratulations to ' + highestBidder;
+      } else {
+        timerElement.innerText = 'Timer: ' + timeLeft + ' seconds remaining';
+      }
+    }, 1000);
+  }
+
+  const auctionContainers = document.querySelectorAll('.auction-container');
+  auctionContainers.forEach((auctionContainer, index) => {
+    const timerElement = auctionContainer.querySelector('.timer');
+    const winnerMessageElement = auctionContainer.querySelector('.winner-message');
+    const bidForm = auctionContainer.querySelector('.bid-form');
+    bidForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      startBidTimer(timerElement, auctionContainer, winnerMessageElement);
+      timerElement.style.display = 'block';
+    });
+  });
+</script>
+
+</body>
+</html>

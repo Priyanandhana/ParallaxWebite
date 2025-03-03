@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Vintage Cars</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Garamond', serif;
+  }
+  .header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .navigation {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+  }
+  .navigation a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .navigation a:hover {
+    color: #ffcc00;
+  }
+
+  .parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  #section2.parallax {
+    background-color: #000;
+  }
+  .video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  .video-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .car-info {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  .car-price {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Garamond', serif;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  <h1>Vintage Cars</h1>
+</div>
+
+<div class="navigation">
+  <a href="auction.html">Auction</a>
+  <a href="videos.html">Click Here for a Cinematic Experience</a>
+</div>
+
+<section id="section1" class="video-container">
+  <video class="video" autoplay loop muted>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-text">Experience the Vintage world</div>
+</section>
+
+<div id="section2" class="parallax" style="background-image: url('background2.jpg');">
+  <div class="car-info">'68 Camaro</div>
+  <div class="car-price">₹35,00,000</div>
+</div>
+
+<div id="section3" class="parallax" style="background-image: url('background3.jpg');">
+  <div class="car-info">Mustang 1966</div>
+  <div class="car-price">₹30,00,000</div>
+</div>
+
+<div class="parallax" style="background-image: url('background4.jpg');">
+  <div class="car-info">Porsche 911 Carrera</div>
+  <div class="car-price">₹60,00,000</div>
+</div>
+
+<div class="parallax" style="background-image: url('background5.jpg');">
+  <div class="car-info">Mustang 1969</div>
+  <div class="car-price">₹40,00,000</div>
+</div>
+
+<div class="parallax" style="background-image: url('background6.jpg');">
+  <div class="car-info">Volkswagen Beetle</div>
+  <div class="car-price">₹15,00,000</div>
+</div>
+
+<div class="parallax" style="background-image: url('background7.jpg');">
+  <div class="car-info">Nissan Datsun 240Z</div>
+  <div class="car-price">₹25,00,000</div>
+</div>
+
+<div class="parallax" style="background-image: url('background8.jpg');">
+  <div class="car-info">Rolls-Royce Phantom</div>
+  <div class="car-price">₹1,50,00,000</div>
+</div>
+</body>
+</html>

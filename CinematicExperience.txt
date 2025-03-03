@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos - Vintage Cars</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Garamond', serif;
+  }
+  .header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .navigation {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+  }
+  .navigation a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .navigation a:hover {
+    color: #ffcc00;
+  }
+
+  .parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+  }
+  .parallax video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+  .car-name {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  <h1>Vintage Cars</h1>
+</div>
+
+<div class="navigation">
+  <a href="para.html">Back to Main Page</a>
+</div>
+
+<section id="section2" class="parallax">
+  <video autoplay loop muted>
+    <source src="background2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">'68 Camaro</div>
+</section>
+
+<section id="section3" class="parallax">
+  <video autoplay loop muted>
+    <source src="background3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Mustang 1966</div>
+</section>
+
+<section id="section4" class="parallax">
+  <video autoplay loop muted>
+    <source src="background4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Porsche 911 Carrera</div>
+</section>
+
+<section id="section5" class="parallax">
+  <video autoplay loop muted>
+    <source src="background5.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Mustang 1969</div>
+</section>
+
+<section id="section6" class="parallax">
+  <video autoplay loop muted>
+    <source src="background6.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Volkswagen Beetle</div>
+</section>
+
+<section id="section7" class="parallax">
+  <video autoplay loop muted>
+    <source src="background7.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Nissan Datsun 240Z</div>
+</section>
+
+<section id="section8" class="parallax">
+  <video autoplay loop muted>
+    <source src="background8.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="car-name">Rolls-Royce Phantom</div>
+</section>
+
+</body>
+</html>
